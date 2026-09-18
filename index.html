@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -212,6 +212,8 @@
 
         <div class="grid md:grid-cols-2 gap-8">
 
+          <!-- Technical Skills -->
+
           <div class="p-6 border border-white/10 rounded-2xl bg-[#121212]">
 
             <h3 class="font-display text-2xl uppercase mb-6 flex items-center gap-3">
@@ -260,6 +262,8 @@
           </div>
 
 
+          <!-- Build Focus -->
+
           <div class="space-y-8">
 
             <div class="p-6 border border-white/10 rounded-2xl bg-[#121212]">
@@ -304,6 +308,8 @@
               </div>
             </div>
 
+
+            <!-- Projects -->
 
             <div class="p-6 border border-white/10 rounded-2xl bg-[#121212]">
 
@@ -352,6 +358,8 @@
 
         </div>
 
+
+        <!-- Education / Contact -->
 
         <div class="grid md:grid-cols-2 gap-8 mt-8">
 
@@ -471,6 +479,8 @@
           class="grid grid-cols-2 gap-3 overflow-y-auto custom-scroll flex-1 max-h-[50vh] pr-2"
         ></div>
 
+
+        <!-- ADMIN UPLOAD -->
 
         <div class="admin-controls mt-4 flex-col">
 
@@ -1091,99 +1101,119 @@
 
     const ADMIN_PASS = 'Luzuko2026!';
 
-const STORE = {
-  work: 'ld_work_v8',
-  apps: 'ld_apps_v7',
-  profile: 'ld_profile_v7',
-  admin: 'ld_admin_v7'
-};
+    const STORE = {
+      work: 'ld_work_v2',
+      apps: 'ld_apps_v2',
+      profile: 'ld_profile_v2',
+      admin: 'ld_admin_v2'
+    };
 
 
-// =====================================================
-// DEFAULT WORK
-// =====================================================
+    // =====================================================
+    // DEFAULT WORK (UPDATED WITH YOUR CLOUDINARY IMAGES)
+    // =====================================================
 
-const defaultWork = [
-  {
-    id: 'exhibition-design-01',
-    title: 'EXHIBITION BOOTH DESIGN 01',
-    subtitle: 'Golden Cloud',
-    year: '2026',
-    image: 'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555640/Untitled4.png',
-    gallery: [
-      'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555640/Untitled4.png'
-    ]
-  },
+    const defaultWork = [
 
-  {
-    id: 'exhibition-design-02',
-    title: 'EXHIBITION BOOTH DESIGN 02',
-    subtitle: 'Booth Design',
-    year: '2026',
-    image: 'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555630/Untitled7.png',
-    gallery: [
-      'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555630/Untitled7.png'
-    ]
-  },
+      {
+        id: 'leaf-booth',
+        title: 'LEAF',
+        subtitle: 'Exhibition Booth Design',
+        year: '2026',
+        image: 'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555630/Untitled7.png',
+        gallery: [
+          'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555630/Untitled7.png',
+          'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555615/4vc.png'
+        ]
+      },
 
-  {
-    id: 'exhibition-design-03',
-    title: 'EXHIBITION BOOTH DESIGN 03',
-    subtitle: 'Luzuko Concept',
-    year: '2026',
-    image: 'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555624/luzuko2.png',
-    gallery: [
-      'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555624/luzuko2.png'
-    ]
-  },
+      {
+        id: 'golden-cloud',
+        title: 'GOLDEN CLOUD',
+        subtitle: 'Exhibition Booth Design',
+        year: '2026',
+        image: 'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555640/Untitled4.png',
+        gallery: [
+          'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555640/Untitled4.png',
+          'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555624/luzuko2.png',
+          'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555656/5vc.png'
+        ]
+      }
 
-  {
-    id: 'exhibition-design-04',
-    title: 'EXHIBITION BOOTH DESIGN 05',
-    subtitle: 'Booth Concept',
-    year: '2026',
-    image: 'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555615/4vc.png',
-    gallery: [
-      'https://res.cloudinary.com/gahyzuzl/image/upload/v1789555615/4vc.png'
-    ]
-  },
-
-  {
-    id: 'exhibition-design-05',
-    title: 'EXHIBITION BOOTH DESIGN 06',
-    subtitle: 'Exhibition Concept',
-    year: '2026',
-    image: 'https://res.cloudinary.com/hn18c2e3/image/upload/f_auto,q_auto/a325883a-8249-4d21-a0d0-7867083b9cdb_image',
-    gallery: [
-      'https://res.cloudinary.com/hn18c2e3/image/upload/f_auto,q_auto/a325883a-8249-4d21-a0d0-7867083b9cdb_image'
-    ]
-  },
-
-  {
-    id: 'exhibition-design-06',
-    title: 'EXHIBITION BOOTH DESIGN 07',
-    subtitle: 'Final Concept',
-    year: '2026',
-    image: 'https://res.cloudinary.com/hn18c2e3/image/upload/f_auto,q_auto/f85356b8-e1c8-41de-be94-fe9bd7da4b50_image',
-    gallery: [
-      'https://res.cloudinary.com/hn18c2e3/image/upload/f_auto,q_auto/f85356b8-e1c8-41de-be94-fe9bd7da4b50_image'
-    ]
-  }
-];
+    ];
 
 
     // =====================================================
     // DEFAULT APPS
     // =====================================================
 
-    const defaultApps = [];
+    const defaultApps = [
+
+      {
+        id: 'kasiflow',
+        title: 'KasiFlow OS',
+        subtitle: 'Web App',
+        desc: 'Merchant POS & micro-logistics platform built for township businesses with offline sync.',
+        tags: [
+          'React',
+          'TypeScript',
+          'Tailwind'
+        ],
+        status: 'Live',
+        statusColor: 'emerald',
+        image: 'https://images.unsplash.com/photo-1556742049-0a67e5572293?w=800&q=80',
+        gallery: [
+          'https://images.unsplash.com/photo-1556742049-0a67e5572293?w=800&q=80'
+        ]
+      },
+
+      {
+        id: 'vibepulse',
+        title: 'VibePulse AI',
+        subtitle: 'AI & Tools',
+        desc: 'Reactive 3D sound visualizer and waveform synthesiser driven by real-time audio analysis.',
+        tags: [
+          'Web Audio',
+          'Canvas 2D',
+          'Gemini AI'
+        ],
+        status: 'Beta',
+        statusColor: 'accent',
+        image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&q=80',
+        gallery: [
+          'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&q=80'
+        ]
+      },
+
+      {
+        id: 'mzansi',
+        title: 'Mzansi Grid Pulse',
+        subtitle: 'Utility',
+        desc: 'Precision load-shedding stage tracker with battery runtime calculators and solar alerts.',
+        tags: [
+          'Next.js',
+          'WebSockets',
+          'GeoAPI'
+        ],
+        status: 'Live',
+        statusColor: 'emerald',
+        image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80',
+        gallery: [
+          'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80'
+        ]
+      }
+
+    ];
 
 
     // =====================================================
     // STATE
     // =====================================================
 
-   let workData = structuredClone(defaultWork);
+    let workData = read(
+      STORE.work,
+      defaultWork
+    );
 
     let appsData = read(
       STORE.apps,
@@ -1420,12 +1450,6 @@ const defaultWork = [
 
       if (!grid) return;
 
-      if (appsData.length === 0) {
-        grid.innerHTML = '<div class="col-span-full text-center py-16 border-2 border-dashed border-white/10 rounded-3xl"><p class="text-white/40 text-lg mb-4">No apps yet</p><p class="text-white/30 text-sm">Login as admin and click "Add App" to showcase your applications</p></div>';
-        lucide.createIcons();
-        return;
-      }
-
 
       grid.innerHTML =
         appsData.map(item => `
@@ -1552,8 +1576,7 @@ const defaultWork = [
             <div class="p-6 pt-0">
 
               <a
-                href="${esc(item.url || '#')}"
-                target="_blank"
+                href="#apps"
                 class="w-full py-3 bg-white text-black font-bold rounded-xl text-xs uppercase tracking-widest hover:bg-accent transition-all flex items-center justify-center gap-2"
               >
 
@@ -1569,6 +1592,8 @@ const defaultWork = [
 
         `).join('');
 
+
+      updateCounts();
 
       lucide.createIcons();
 
@@ -2558,7 +2583,7 @@ const defaultWork = [
 
       const payload = {
 
-        version: 7,
+        version: 2,
 
         exportedAt:
           new Date().toISOString(),
@@ -2848,3 +2873,4 @@ const defaultWork = [
 
 </body>
 </html>
+
