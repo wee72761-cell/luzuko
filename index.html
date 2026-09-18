@@ -1183,10 +1183,7 @@ const defaultWork = [
     // STATE
     // =====================================================
 
-    let workData = read(
-      STORE.work,
-      defaultWork
-    );
+   let workData = structuredClone(defaultWork);
 
     let appsData = read(
       STORE.apps,
